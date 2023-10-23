@@ -8,7 +8,7 @@ namespace Labb6_OOP_Arv
 {
     internal class Wolf : Mammal
     {
-        //Variable for holding leopard count
+        //Variable for holding wolf count
         static int _wolfCount = 0;
 
         //Constructor
@@ -23,7 +23,7 @@ namespace Labb6_OOP_Arv
             IsWild = isWild;
             Status = MakeSound();
 
-            //Add 1 for each leopard created
+            //Add 1 for each wolf created
             _wolfCount++;
             //Shortname for the id
             AnimalId = "WOL" + _wolfCount;

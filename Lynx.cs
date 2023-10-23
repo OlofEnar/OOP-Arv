@@ -23,7 +23,7 @@ namespace Labb6_OOP_Arv
             IsWild = isWild;
             Status = MakeSound();
 
-            //Add 1 for each leopard created
+            //Add 1 for each lynx created
             _lynxCount++;
             //Shortname for the id
             AnimalId = "LYN" + _lynxCount;
