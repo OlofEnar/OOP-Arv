@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Labb6_OOP_Arv
 {
-    internal class Cat : Mammal
+    //Animal type class
+    internal class Reptile : Animal
     {
+
 
     }
 }

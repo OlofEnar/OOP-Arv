@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Labb6_OOP_Arv
 {
-    internal class Leopard : Cat
+    internal class Crocodile : Reptile
     {
-        //Variable for holding leopard count
-        static int _leopardCount = 0;
+        //Variable for holding crocodile count
+        static int _crocodileCount = 0;
 
         //Constructor
-        public Leopard(string name, string sex, int age, bool isWild)
+        public Crocodile(string name, string sex, int age, bool isWild)
         {
             AnimalType = GetAnimalType();
             AnimalFamily = GetAnimalFamily();
@@ -21,17 +21,16 @@ namespace Labb6_OOP_Arv
             Sex = sex;
             Age = age;
             IsWild = isWild;
+            Status = MakeSound();
 
             //Add 1 for each leopard created
-            _leopardCount++;
+            _crocodileCount++;
             //Shortname for the id
-            AnimalId = "LEP" + _leopardCount;
-
+            AnimalId = "CRO" + _crocodileCount;
         }
-
         public override string MakeSound()
         {
-            Status = $"{Name} meows";
+            Status = $"{Name} is snooring";
             return Status;
         }
     }
